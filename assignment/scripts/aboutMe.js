@@ -74,6 +74,17 @@ console.log(diceRoll);
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
+let petStatus = '';
+if(pets < allowedPets){
+  petStatus = 'I can have more pets';
+}  //end more pets
+  else if(pets == allowedPets){
+    petStatus = 'I have enough pets';
+  }  // end enough pets
+  else{petStatus = 'Oh no, I have too many pets!';
+  }  // end petStatus
+
+console.log(petStatus);
 
 
 // STRETCH GOALS:
@@ -83,6 +94,17 @@ console.log(diceRoll);
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
+let mostPets = 0
+if(pets > friendsPets){
+  mostPets = pets;
+}  //end my pets is greater
+else if(pets < friendsPets){
+  mostPets = friendsPets;
+}  //end friend has greatest pets
+else{
+  mostPets = 'Both my friend and I have ' + pets + ' pets.';
+}   //end same number of pets
+console.log(mostPets);
 
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
