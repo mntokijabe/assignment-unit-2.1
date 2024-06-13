@@ -12,7 +12,7 @@ let fullName = firstName +' ' + lastName;
 console.log( fullName );
 
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
-let luckyNumber = 21
+let luckyNumber = 21;
 //     Console log the value of `luckyNumber`
 console.log ( luckyNumber );
 // 5 - Create a variable `introduction` and using the variables from above,
@@ -24,7 +24,7 @@ let introduction = 'My name is ' + fullName + ', and I think '+ luckyNumber +' i
 console.log( introduction );
 
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
-let adventurous = false
+let adventurous = false;
 //     Console log the value of `adventurous`
 console.log (adventurous);
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
@@ -34,26 +34,26 @@ console.log (food);
 
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
-let pets = 0
+let pets = 0;
 console.log( pets );
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 1
+let friendsPets = 1;
 console.log (friendsPets);
 // 10 - Add two pets to your `pets` variable
-pets += 2
+pets += 2;
 console.log(pets);
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
-const allowedPets = 1
+const allowedPets = 1;
 // 12 - Create a variable called `result`. Create a conditional:
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
-let result = 'start'
+let result;
 if(adventurous == true){
   (result = 'Adventures are great!')}
   else{result = 'How about we stay home?'
   };  // end adventurous if
-console.log(result)
+console.log(result);
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
 //      if luckyNumber is 2 and adventurous is true,
@@ -74,7 +74,7 @@ console.log(diceRoll);
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
-let petStatus = '';
+let petStatus;
 if(pets < allowedPets){
   petStatus = 'I can have more pets';
 }  //end more pets
@@ -94,7 +94,7 @@ console.log(petStatus);
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
-let mostPets = 0
+let mostPets;
 if(pets > friendsPets){
   mostPets = pets;
 }  //end my pets is greater
@@ -114,7 +114,7 @@ console.log(mostPets);
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
-let luckyResult = 0;
+let luckyResult;
 switch (luckyNumber) {
   case 1:
     luckyResult = 'First is the worst';
